@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 </head>
+<script>
+    function validar(){
+        var usuario = document.getElementById('usuario').value;
+        var password = document.getElementById('password').value;
+        if(usuario == 'administrador'&& password == '12345' ) {
+            alert('login exitoso');
+        }else{
+            alert('datos erroneos');
+        }
+    }
+</script>
 <body>
     <h1>Login</h1>
     <input type="text" id="usuario" placeholder="usuario">
     <br><br>
     <input type="password" id="password" placeholder="contraseña">
     <br><br>
-    <button>Ingresar</button>
+    <button onclick="validar()">Ingresar</button>
 </body>
 </html>
